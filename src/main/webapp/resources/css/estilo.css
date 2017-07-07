@@ -1,0 +1,257 @@
+
+.safe-area {
+    background: -webkit-linear-gradient(67deg, rgb(252, 193, 0), rgb(237, 86, 24));
+    background: linear-gradient(67deg, rgb(252, 193, 0), rgb(237, 86, 24));
+    height: 100vh;
+}
+
+.header {
+    height: 60px;
+    padding: 1rem;
+}
+
+.navbar {
+    padding: 10px;
+    background: transparent !important;
+    border: none;
+    position:relative;
+
+}
+.navbar .navbar-nav > li > a {
+    color: #FFF;
+}
+
+.navbar .nav-link { /*hover é quando passa a setinha em cima do link*/
+    color: #FFF;
+    font-size: 17px;
+    font-weight: bold; /*possui o estilo em negrito*/
+}
+
+.navbar .nav-link:hover { /*hover é quando passa a setinha em cima do link*/
+    color: #f5e79e;
+    font-size: 20px;
+}
+.navbar .navbar-brand {
+    color: #FFF;
+
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #ff0;
+}
+
+.navbar .navbar-nav > li > a:active,
+.navbar .navbar-nav > li > a:focus {
+    text-decoration: underline; /*vai ficar sublinhado*/
+    color: #ff0;
+}
+.container-fluid  {
+
+    padding: -2rem;
+    text-align: center;
+    color: #FFF;
+}
+
+.container-fluid  {  
+    padding-top: -20rem;
+    text-align: center;
+    color: #FFF;
+}
+
+.container-fluid > h2 {
+    padding-top: -10rem;
+}
+
+
+section.sobre .itens{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    -webkit-align-items:center;
+    -moz-align-items:center;
+    align-items:center;
+    -ms-flex-pack:distribute;
+    -webkit-justify-content:space-around;
+    -moz-justify-content:space-around;
+    justify-content:space-around;
+    margin:15px 0;text-align:center;
+    position:relative;min-height:1px;
+    padding-left:15px;padding-right:15px;
+}
+
+
+.section.sobre .itens .foto{
+    padding-top: 1rem;
+    -webkit-box-ordinal-group:3;
+    -webkit-order:3;
+    -moz-order:3;
+    -ms-flex-order:3;
+    order:3
+}
+
+.feature {
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+}
+
+.feature .feature-item {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.feature .feature-item .feature-heading {
+    margin-left: 0;
+
+}
+
+.feature .feature-item .feature-heading .headline {
+    padding-top: 2rem;
+    text-align: center;
+    color: #d58512;
+
+}
+
+
+.feature .feature-item .feature-heading .text {
+    text-align: center;
+    padding-top: 1rem;
+
+}
+.feature .feature-item .fa {
+    padding-top: 3rem;
+    position: initial;
+    color: #d58512;
+}
+
+
+/*PARA TABLETS */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 10px;
+        background: #ff0;
+        border: none;
+
+    }   
+    .navbar-collapse {
+        position: relative;
+        z-index: 999;
+        background-color: #fcdb00;
+    }
+    .navbar-nav {
+        padding:0 2rem;
+        padding: 2rem;
+        margin-top: 2rem;
+    } 
+   
+}  
+
+/*PARA CELULARES */
+@media (max-width: 480px) {
+    
+
+
+}
+
+.contato {
+    padding-top: 0.2em;
+    padding-bottom: 2rem;
+}
+
+.contato form{
+    position:relative;
+    min-height:1px;
+    padding-left:15px;
+    padding-right:15px}
+
+.contato form:before,
+.contato form:after{
+    content:" ";display:table}
+
+.contato form:after{clear:both}
+
+@media (min-width: 768px){
+    .contato form{float:left;width:66.66667%}}
+
+@media (min-width: 768px){
+    .contato form{margin-left:16.66667%}}
+    .contato form .cols{
+        margin-left:-15px;
+        margin-right:-15px}
+    
+    .contato form .cols:before,
+    .contato form .cols:after{content:" ";display:table}
+    .contato form .cols:after{clear:both}
+    .contato form .col{
+        position:relative;min-height:1px;padding-left:15px;padding-right:15px}
+    
+    @media (min-width: 768px){
+        .contato form .col{float:left;width:50%}}
+    
+    .contato form input,
+    .contato form select,
+    .contato form textarea{
+        width:100%;border:2px solid #e1e1e1;padding:7px;text-transform:uppercase;-webkit-transition:0.3s;
+        -o-transition:0.3s;transition:0.3s}
+    
+    .contato form input:hover,.contato form select:hover,.contato form textarea:hover{border-color:#31b1e7}
+    .contato form input:focus,.contato form select:focus,.contato form textarea:focus{border-color:#9ad15e}
+    .contato form select{height:37px}
+    .contato form button{background-color:transparent;display:table;margin:0 auto}
+    .contato form .bg-success,.contato form .bg-danger{padding:7px}
+
+
+
+/* FOOTER */
+.container .footer {
+    padding-top: 20px;
+}
+.footer {
+	background-color: #404F56;
+	padding: 3rem 0;
+        
+}
+
+.footer .headline {
+	color: 	#fff;
+}
+
+.footer .description {
+	color: #fff;
+}
+
+/*PARA CELULARES */
+@media (max-width: 480px) {
+
+    p {font-size: 1.5rem;}
+    h2 {font-size: 2.0rem;}
+    h3 {font-size:1.8rem};
+ 
+.section.sobre .itens .foto{
+    padding-top: 1px;
+    -webkit-box-ordinal-group:3;
+    -webkit-order:3;
+    -moz-order:3;
+    -ms-flex-order:3;
+    order:3
+}
+
+section.sobre .itens{
+
+    margin:0.5px 0;text-align:center;
+    position:relative;min-height:1px;
+    padding-left:15px;padding-right:15px;
+}
+}

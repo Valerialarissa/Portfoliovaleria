@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title><ui:define name="title">Portfólio Valéria</ui:define></title>
+        <h:outputStylesheet name="css/bootstrap.min.css" />
+        <h:outputStylesheet name="css/estilo.css" />
+        <h:outputStylesheet name="css/font-awesome.min.css" />
+        <h:outputScript name="js/bootstrap.min.js" />
+        <h:outputScript name="resources/js/jquery.min.js" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </h:head>
+    <body>
+        <div class="safe-area">
+            <!-- Início da barra de navegação -->
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+
+                    <!-- botao utilizado para abrir menu em dispositivos resolucao menor -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- logo do site -->
+                    <a class="navbar-brand" href="sobre.xhtml">Portfólio
+                    </a> 
+
+
+                    <!-- inicio menu -->
+                    <div class="navbar-collapse collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="sobre.xhtml">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.xhtml">PORTFÓLIO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contato.xhtml">CONTATO</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- fim menu -->
+
+                </div>
+            </div>
+            <section class="sobre">
+                <div class="container">
+                    <div class="itens">			
+
+                        <div class="foto" data-wow-duration="1s" data-wow-delay="5s">
+                            <img src="imagens/foto-valeria.png"  width="70%" height="70%"  alt="Foto TAG"/>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <h3 class="headline text-center">Valéria Larissa</h3>	
+                        <p>Designer Gráfico E Arte Finalista</p>
+                        <p class="description text-center">
+                            <i>"A Criatividade está no modo de como você enxerga a realidade ao seu redor."</i>
+                         </p>
+                        <p> Sou freelancer com mais de 4 anos de experiência nas área de design gráfico e arte final.<br/> 
+                            Meu objetivo é compreender o seu negócio e produzir impacto visual para sua empresa.<br/>
+                        </p>
+                    </div>
+                </div>
+            </section> 
+        </div> <!-- Final do SOBRE -->
+    </body>
+</html>
